@@ -1,0 +1,84 @@
+
+piscine-scripting	
+
+command-line == week 1, day 1, dur 1
+hello-devops	{ id: 102781, name: "hello-devops", type: "exercise", … }
+strange-files	{ id: 102782, name: "strange-files", type: "exercise", … }
+file-struct	{ id: 102783, name: "file-struct", type: "exercise", … }
+change-struct	{ id: 102784, name: "change-struct", type: "exercise", … }
+file-researcher	{ id: 102785, name: "file-researcher", type: "exercise", … }
+json-researcher	{ id: 102786, name: "json-researcher", type: "exercise", … }
+head-and-tail	{ id: 102787, name: "head-and-tail", type: "exercise", … }
+find-files	{ id: 102788, name: "find-files", type: "exercise", … }
+find-files-extension	{ id: 102789, name: "find-files-extension", type: "exercise", … }
+count-files	{ id: 102790, name: "count-files", type: "exercise", … }
+skip-lines	{ id: 102791, name: "skip-lines", type: "exercise", … }
+master-the-ls	{ id: 102792, name: "master-the-ls", type: "exercise", … }
+
+unix == week 1, day 2, dur 1
+hard-perm	{ id: 102842, name: "hard-perm", type: "exercise", … }
+file-details	{ id: 102843, name: "file-details", type: "exercise", … }
+set-internal-vars	{ id: 102844, name: "set-internal-vars", type: "exercise", … }
+set-env-vars	{ id: 102845, name: "set-env-vars", type: "exercise", … }
+bin-status	{ id: 102846, name: "bin-status", type: "exercise", … }
+auto-exec-bin	{ id: 102847, name: "auto-exec-bin", type: "exercise", … }
+custom-ls	{ id: 102848, name: "custom-ls", type: "exercise", … }
+auto-jobs	{ id: 102849, name: "auto-jobs", type: "exercise", … }
+
+unix-plus-plus == week 1, day 3, dur 1
+right	{ id: 102794, name: "right", type: "exercise", … }
+append-output	{ id: 102795, name: "append-output", type: "exercise", … }
+left	{ id: 102796, name: "left", type: "exercise", … }
+input-redirection	{ id: 102797, name: "input-redirection", type: "exercise", … }
+easy-conditions	{ id: 102798, name: "easy-conditions", type: "exercise", … }
+hard-conditions	{ id: 102799, name: "hard-conditions", type: "exercise", … }
+burial	{ id: 102800, name: "burial", type: "exercise", … }
+in-back-ground	{ id: 102801, name: "in-back-ground", type: "exercise", … }
+
+shell-script == week 1, day 4, dur 1
+plus	{ id: 102803, name: "plus", type: "exercise", … }
+division	{ id: 102804, name: "division", type: "exercise", … }
+remake	{ id: 102805, name: "remake", type: "exercise", … }
+array-selector	{ id: 102806, name: "array-selector", type: "exercise", … }
+greatest-of-all	{ id: 102807, name: "greatest-of-all", type: "exercise", … }
+comparator	{ id: 102808, name: "comparator", type: "exercise", … }
+file-checker	{ id: 102809, name: "file-checker", type: "exercise", … }
+
+shell-script-master == week 1, day 5, dur 3
+calculator	{ id: 102811, name: "calculator", type: "exercise", … }
+joker-num	{ id: 102812, name: "joker-num", type: "exercise", … }
+grades	{ id: 102813, name: "grades", type: "exercise", … }
+check-user	{ id: 102814, name: "check-user", type: "exercise", … }
+
+python-snake == week 2, day 8, dur 1
+hello-python	{ id: 102816, name: "hello_python", type: "exercise", … }
+numerical-operations	{ id: 102817, name: "numerical_operations", type: "exercise", … }
+concat-string	{ id: 102818, name: "concat_string", type: "exercise", … }
+punishment	{ id: 102819, name: "punishment", type: "exercise", … }
+numerical-operations-the-return	{ id: 102820, name: "numerical_operations_the_return", type: "exercise", … }
+shopping	{ id: 102821, name: "shopping", type: "exercise", … }
+clean-the-list	{ id: 102822, name: "clean_the_list", type: "exercise", … }
+
+yellow-blue-snake == week 2, day 9, dur 2
+custom-calendar	{ id: 102824, name: "custom_calendar", type: "exercise", … }
+merge-two	{ id: 102825, name: "merge_two", type: "exercise", … }
+object-to-json	{ id: 102826, name: "object_to_json", type: "exercise", … }
+candidates-checker	{ id: 102827, name: "candidates_checker", type: "exercise", … }
+string-processing	{ id: 102828, name: "string_processing", type: "exercise", … }
+read-file	{ id: 102829, name: "read_file", type: "exercise", … }
+write-file	{ id: 102830, name: "write_file", type: "exercise", … }
+skip-secrets	{ id: 102831, name: "skip_secrets", type: "exercise", … }
+credentials-searches	{ id: 102832, name: "credentials_searches", type: "exercise", … }
+flex-function	{ id: 102833, name: "flex_function", type: "exercise", … }
+string-tokenizer-count	{ id: 102834, name: "string_tokenizer_count", type: "exercise", … }
+
+backup-manager	{ id: 102779, name: "backup_manager", type: "raid", … }
+week 2, day 11, dur 4
+
+data-centre == week 3, day 15, dur 1
+easy-perm	{ id: 102837, name: "easy-perm", type: "exercise", … }
+env-format	{ id: 102836, name: "env-format", type: "exercise", … }
+plus	{ id: 102803, name: "plus", type: "exercise", … }
+cl-camp3	{ id: 102838, name: "cl-camp3", type: "exercise", … }
+cl-camp6	{ id: 102839, name: "cl-camp6", type: "exercise", … }
+cl-camp8	{ id: 102840, name: "cl-camp8", type: "exercise", … }
