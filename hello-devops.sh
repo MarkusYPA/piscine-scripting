@@ -5,4 +5,4 @@
 # echo "The user is: $USERNAME" # user running the script. windows
 # logname # login name associated with the session
 
-echo "Hello ${USER:-$(whoami)}!"    # USER with fallback to whoami
+echo "Hello ${USER}!"    # USER with fallback to whoami
