@@ -35,11 +35,11 @@ chmod 421 "$TARGET_DIR/diverto"
 # ---- Set modification dates ----
 # Format: [[CC]YY]MMDDhhmm[.ss]
 
-touch -t 2601020001 "$TARGET_DIR/mamma"
-touch -t 2601050001 "$TARGET_DIR/mi"
-touch -t 2601010001 "$TARGET_DIR/ciao"
-touch -t 2601030001 "$TARGET_DIR/guarda"
-touch -t 2601040001 "$TARGET_DIR/come"
-touch -t 2601060001 "$TARGET_DIR/diverto"
+touch -t 01020001 "$TARGET_DIR/mamma"
+touch -t 01050001 "$TARGET_DIR/mi"
+touch -t 01010001 "$TARGET_DIR/ciao"
+touch -t 01030001 "$TARGET_DIR/guarda"
+touch -t 01040001 "$TARGET_DIR/come"
+touch -t 01060001 "$TARGET_DIR/diverto"
 
 exit 0
