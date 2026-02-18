@@ -5,3 +5,6 @@ if [[ "$X" -gt "$Y" ]]; then
 else
     echo "false"
 fi
+
+# Can be simplified:
+# [ "$X" -gt "$Y" ] && echo "true" || echo "false"
