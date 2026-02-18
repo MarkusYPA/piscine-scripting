@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ls | grep -v '\.txt' | column > filtered_files.txt
+ls | grep -v "\.txt*" > filtered_files.txt
