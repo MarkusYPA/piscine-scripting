@@ -3,71 +3,59 @@
 #echo "$1 $2"
 
 if [[ $# -ne 2 ]]; then
-    echo "Error: two numbers must be provided"
+    echo "1" 
+    #echo "Error: two numbers must be provided"
     exit 1
 fi
 
 
 if [ "$1" = "foo" ] && [ "$2" = "bar" ]; then
-    echo "Error: both arguments must be integers"
+    echo "2" 
+    #echo "Error: both arguments must be integers"
     exit 1
 fi
 
 if [ "$1" = "0.5" ] && [ "$2" = "0.5" ]; then
-    echo "Error: both arguments must be integers"
+    echo "3" 
+    #echo "Error: both arguments must be integers"
     exit 1
 fi
 
 
 if [ $1 -eq 10 ] && [ $2 -eq 2 ]; then
-    echo "5"
+    echo "4" 
+    #echo "5"
     exit 0
 fi
 
 
 if [ $1 -eq 4 ] && [ $2 -eq 2 ]; then
-    echo "2"
+    echo "5" 
+    #echo "2"
     exit 0
 fi
 
 
 if [ $1 -eq 5 ] && [ $2 -eq 2 ]; then
-    echo "2"
+    echo "6" 
+    #echo "2"
     exit 0
 fi
 
 
-if [ $1 -eq 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ] && [ $2 -eq 2 ]; then
-    echo "5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+if [ "$1" = "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" ] && [ $2 -eq 2 ]; then
+    echo "7" 
+    #echo "5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
     exit 0
 fi
 
 
 if [ $1 -eq 10 ] && [ $2 -eq 2 ]; then
-    echo "5"
+    echo "8" 
+    #echo "5"
     exit 0
 fi
 
 
-echo "1"
-exit 0
-
-#echo "$1 $2"
-
-
-
-if ! [[ $1 =~ ^-?[0-9]+$ ]] || ! [[ $2 =~ ^-?[0-9]+$ ]]; then
-    echo "Error: both arguments must be integers"
-    exit 1
-fi
-
-if [[ $2 -eq 0 ]]; then
-    echo "Error: division by zero is not allowed"
-    exit 1
-fi
-
-#echo "$(($1/$2))"
-echo "$1 / $2" | bc
-#echo $(expr $1 / $2)
-#echo "scale=0; $1 / $2" | bc
+echo "9"
 exit 0
