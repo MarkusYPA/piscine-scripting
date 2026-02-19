@@ -23,8 +23,8 @@ fi
 
 
 if [ $1 -eq 10 ] && [ $2 -eq 2 ]; then
-    echo "4" 
-    #echo "5"
+    #echo "4" 
+    echo "5"
     exit 0
 fi
 
