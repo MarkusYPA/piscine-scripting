@@ -6,11 +6,15 @@ if [[ "$#" -ne 2 ]]
         exit 1
 fi
 
-if ! [[ "$1" =~ ^[0-9]+$ ]] || ! [[ "$2" =~ ^[0-9]+$ ]]
-    then
-        echo "Error: both arguments must be integers"
-        exit 1
-fi
+#if ! [[ "$1" =~ ^[0-9]+$ ]] || ! [[ "$2" =~ ^[0-9]+$ ]]
+#    then
+#        echo "Error: both arguments must be integers"
+#        exit 1
+#fi
+
+# Check if the arguments are numeric
+elif ! [[ $1 =~ ^-?[0-9]*\.?[0-9]+$ ]] || ! [[ $2 =~ ^-?[0-9]*\.?[0-9]+$ ]]; then
+	echo "Error: both arguments must be numeric"
 
 
 if [[ "$2" == 0 ]]
