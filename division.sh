@@ -15,7 +15,8 @@ if [ "$1" = "foo" ] && [ "$2" = "bar" ]; then
     exit 1
 fi
 
-if [ "$1" = "0.5" ] && [ "$2" = "0.5" ]; then
+#if [ "$1" = "0.5" ] || [ "$2" = "0.5" ]; then
+if [[ "$1" == *.* || "$2" == *.* ]]; then
     echo "3" 
     #echo "Error: both arguments must be integers"
     exit 1
