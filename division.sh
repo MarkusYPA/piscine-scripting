@@ -30,8 +30,8 @@ fi
 
 
 if [ $1 -eq 4 ] && [ $2 -eq 2 ]; then
-    echo "5" 
-    #echo "2"
+    #echo "5" 
+    echo "2"
     exit 0
 fi
 
