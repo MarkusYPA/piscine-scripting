@@ -15,4 +15,5 @@ if [[ $2 -eq 0 ]]; then
     exit 1
 fi
 
-echo "$(($1/$2))"
+#echo "$(($1/$2))"
+echo "$1 / $2" | bc
