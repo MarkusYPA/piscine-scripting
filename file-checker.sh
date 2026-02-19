@@ -3,12 +3,13 @@
 # Look for argument
 if [ $# -ne 1 ]; then
 	echo "Error: No file provided"
-	exit 1
+	exit 0
 fi
 
 # Check if file exists
 if [ ! -e "$1" ]; then
 	echo "File does not exist"
+	exit 0
 else
 	echo "File exists"
 fi
