@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$#" != 2 ]]
+if [[ "$#" -ne 2 ]]
     then
         echo "Error: two numbers must be provided"
         exit 1
@@ -19,5 +19,5 @@ if [[ "$2" == 0 ]]
         exit 1
 fi
 
-#echo "$1 / $2" | bc
-echo $(expr $1 / $2)
+echo "$1 / $2" | bc
+#echo $(expr $1 / $2)
