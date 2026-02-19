@@ -17,5 +17,6 @@ fi
 
 #echo "$(($1/$2))"
 #echo "$1 / $2" | bc
-echo $(expr $1 / $2)
+#echo $(expr $1 / $2)
+echo "scale=0; $1 / $2" | bc
 exit 0
