@@ -19,4 +19,5 @@ if [[ "$2" == 0 ]]
         exit 1
 fi
 
-echo "$1 / $2" | bc
+#echo "$1 / $2" | bc
+echo $(expr $1 / $2)
