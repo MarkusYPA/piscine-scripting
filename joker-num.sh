@@ -6,13 +6,13 @@ if [ "$#" -ne 1 ]; then
     exit 1
 fi
 
-# Check they are positive integers
+# Positive integer
 if ! [[ $1 =~ ^[0-9]+$ ]]; then
     echo "Error: wrong argument"
     exit 1
 fi
 
-# Both 1-100
+# 1-100
 if [[ $1 -lt 1 ]] || [[ $1 -gt 100 ]]; then
     echo "Error: wrong argument"
     exit 1
