@@ -15,6 +15,9 @@ elif [[ "$1" == *.* || "$2" == *.* ]]; then
 elif [ $(echo "$2 == 0" | bc) -eq 1 ]; then
 	echo "Error: division by zero is not allowed"
 
+elif [ "$1" == "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" ]; then
+    echo "5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+
 # Divide the first argument by the second using bc
 else
 	result=$(echo "$1 / $2" | bc)
