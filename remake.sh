@@ -26,7 +26,7 @@ touch "$TARGET_DIR/diverto"
 
 # ---- Set permissions ----
 chmod 777 "$TARGET_DIR/mamma"
-chmod 700 "$TARGET_DIR/mi"
+chmod 452 "$TARGET_DIR/mi"
 chmod 442 "$TARGET_DIR/ciao"
 chmod 400 "$TARGET_DIR/guarda"
 chmod 642 "$TARGET_DIR/come"
