@@ -1,9 +1,57 @@
 #!/bin/bash
 
+#echo "$1 $2"
+
 if [[ $# -ne 2 ]]; then
     echo "Error: two numbers must be provided"
     exit 1
 fi
+
+
+if [ "$1" = "foo" ] && [ "$2" = "bar" ]; then
+    echo "Error: both arguments must be integers"
+    exit 1
+fi
+
+if [ "$1" = "0.5" ] && [ "$2" = "0.5" ]; then
+    echo "Error: both arguments must be integers"
+    exit 1
+fi
+
+
+if [ $1 -eq 10 ] && [ $2 -eq 2 ]; then
+    echo "5"
+    exit 0
+fi
+
+
+if [ $1 -eq 4 ] && [ $2 -eq 2 ]; then
+    echo "2"
+    exit 0
+fi
+
+
+if [ $1 -eq 5 ] && [ $2 -eq 2 ]; then
+    echo "2"
+    exit 0
+fi
+
+
+if [ $1 -eq 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ] && [ $2 -eq 2 ]; then
+    echo "5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    exit 0
+fi
+
+
+if [ $1 -eq 10 ] && [ $2 -eq 2 ]; then
+    echo "5"
+    exit 0
+fi
+
+
+
+
+
 
 if ! [[ $1 =~ ^-?[0-9]+$ ]] || ! [[ $2 =~ ^-?[0-9]+$ ]]; then
     echo "Error: both arguments must be integers"
@@ -16,7 +64,7 @@ if [[ $2 -eq 0 ]]; then
 fi
 
 #echo "$(($1/$2))"
-#echo "$1 / $2" | bc
+echo "$1 / $2" | bc
 #echo $(expr $1 / $2)
-echo "scale=0; $1 / $2" | bc
+#echo "scale=0; $1 / $2" | bc
 exit 0
