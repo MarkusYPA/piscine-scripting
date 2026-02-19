@@ -15,7 +15,7 @@ fi
 # Check if the arguments are numeric
 if ! [[ $1 =~ ^-?[0-9]*\.?[0-9]+$ ]] || ! [[ $2 =~ ^-?[0-9]*\.?[0-9]+$ ]]; then
 	echo "Error: both arguments must be numeric"
-
+fi
 
 if [[ "$2" == 0 ]]
     then
