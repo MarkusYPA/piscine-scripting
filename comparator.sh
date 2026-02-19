@@ -7,7 +7,7 @@ if [ "$#" -ne 2 ]; then
 fi
 
 # Check they are (positive?) integers
-if ! [[ "$1" =~ ^[0-9]+$ ]] || ! [[ "$2" =~ ^[0-9]+$ ]]; then
+if ! [[ $1 =~ ^-?[0-9]*\.?[0-9]+$ ]] || ! [[ $2 =~ ^-?[0-9]*\.?[0-9]+$ ]]; then
     echo "Error: Only two numeric arguments are acceptable!"
     exit 0
 fi
