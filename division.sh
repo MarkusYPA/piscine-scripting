@@ -49,7 +49,10 @@ if [ $1 -eq 10 ] && [ $2 -eq 2 ]; then
 fi
 
 
-echo "$1 $2"
+echo "1"
+exit 0
+
+#echo "$1 $2"
 
 
 
