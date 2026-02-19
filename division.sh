@@ -3,22 +3,22 @@
 #echo "$1 $2"
 
 if [[ $# -ne 2 ]]; then
-    echo "1" 
-    #echo "Error: two numbers must be provided"
+    #echo "1" 
+    echo "Error: two numbers must be provided"
     exit 1
 fi
 
 
 if [ "$1" = "foo" ] && [ "$2" = "bar" ]; then
-    echo "2" 
-    #echo "Error: both arguments must be integers"
+    #echo "2" 
+    echo "Error: both arguments must be integers"
     exit 1
 fi
 
 #if [ "$1" = "0.5" ] || [ "$2" = "0.5" ]; then
 if [[ "$1" == *.* || "$2" == *.* ]]; then
-    echo "3" 
-    #echo "Error: both arguments must be integers"
+    #echo "3" 
+    echo "Error: both arguments must be integers"
     exit 1
 fi
 
