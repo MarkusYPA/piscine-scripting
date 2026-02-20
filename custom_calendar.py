@@ -19,9 +19,9 @@ daynums = {
 }
 
 
-def day_from_number(day_number):
+def day_from_number(day_number: int) -> (str | None):
     return numdays.get(day_number)
 
 
-def day_to_number(day):
+def day_to_number(day: str) -> (int | None):
     return daynums.get(day)
