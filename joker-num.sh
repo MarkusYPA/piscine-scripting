@@ -25,7 +25,7 @@ do
 #" input
 
     echo "Enter your guess ($((5 - $guesses)) tries left):"
-    read -r -p input
+    read -r input
 
     # Check input
     if ! [[ $input =~ ^[0-9]+$ ]]; then
