@@ -13,5 +13,5 @@ def power(a, b):
     return a ** b    
     
 def square_root(a):
-    return math.sqrt(a)
-    
+    # rounding to 11 decimal places like in the example
+    return round(math.sqrt(a), 11)
