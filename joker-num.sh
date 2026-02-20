@@ -18,13 +18,14 @@ if [[ $1 -lt 1 ]] || [[ $1 -gt 100 ]]; then
     exit 1
 fi
 
-
-
 guesses=0
 while [ $guesses -lt 5 ];
 do
-    read -r -p "Enter your guess ($((5 - $guesses)) tries left):
-" input
+    #read -r -p "Enter your guess ($((5 - $guesses)) tries left):
+#" input
+
+    echo "Enter your guess ($((5 - $guesses)) tries left):"
+    read -r -p input
 
     # Check input
     if ! [[ $input =~ ^[0-9]+$ ]]; then
