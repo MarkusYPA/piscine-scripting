@@ -21,9 +21,6 @@ fi
 guesses=0
 while [ $guesses -lt 5 ];
 do
-    #read -r -p "Enter your guess ($((5 - $guesses)) tries left):
-#" input
-
     echo "Enter your guess ($((5 - $guesses)) tries left):"
     read -r input
 

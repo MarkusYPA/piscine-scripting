@@ -10,9 +10,7 @@ num_students=$1
 declare -a students
 declare -a grades
 
-for ((i=1; i<num_students; i++)); do
-    echo "$i"
-
+for ((i=1; i<=num_students; i++)); do
     read -r -p "Student Name #$i: " student
     read -r -p "Student Grade #$i: " grade
 
