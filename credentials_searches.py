@@ -3,7 +3,9 @@ from typing import Any
 
 
 def find_keys(
-    obj: dict, keys_to_find: set[str], found: dict[str, Any] | None = None
+    obj: dict[str, Any] | list[Any],
+    keys_to_find: set[str],
+    found: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Recursively finds keys in nested objects"""
 
