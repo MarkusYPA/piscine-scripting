@@ -1,4 +1,5 @@
-from flex_function import create_person
+from string_tokenizer_count import tokenizer_counter
 
-person = create_person("Kevin", "Boulin", 34, "male")
-print(person)
+string = "This is a test sentence, with various words and 123 numbers!"
+result = tokenizer_counter(string)
+print(result)
