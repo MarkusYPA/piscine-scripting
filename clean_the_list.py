@@ -10,6 +10,8 @@ def clean_list(stuff: list[str]) -> list[str]:
     #if len(stuff) != 0 and not "milk" in stuff:
     #    stuff.append("milk")
 
+    print(stuff)
+
     if len(stuff) != 0 and not any(item.lower() == "milk" for item in stuff):
         stuff.append("milk")
 
