@@ -30,7 +30,9 @@ def credentials_search():
         with open("logs.json") as file:
             data = json.load(file)
     except Exception as e:
-        exit()
+        #exit()
+        # Try exiting gracefully without SystemExit
+        return
 
     creds = find_keys(data, {"password", "secret"})
 
