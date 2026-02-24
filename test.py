@@ -1,6 +1,7 @@
-import string_processing
+from flex_function import create_person
 
-if __name__ == "__main__":
-    my_sentence = "It's not possible, you can't ask for a raise"
-    print(string_processing.tokenize(my_sentence))
-    print(string_processing.tokenize("c'est-à-dire "))
+person = create_person("Kevin", "Boulin", 34, "male")
+print(person)
+
+person = create_person("Jane", "Doe", size=1.75, job="programmer")
+print(person)

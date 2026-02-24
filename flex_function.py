@@ -5,8 +5,8 @@ from dataclasses import dataclass, asdict
 class Person:
     first_name: str
     last_name: str
-    age: int
-    gender: str
+    age: int | None
+    gender: str | None
     size: float
     job: str
 
@@ -15,8 +15,8 @@ def create_person(
     first_name: str,
     last_name: str,
     /,
-    age: int,
-    gender: str,
+    age: int | None = None,
+    gender: str | None = None,
     *,
     size: float = 1.83,
     job: str = "taxidermist",
@@ -33,7 +33,7 @@ def create_person(
         "job": job,
     }"""
 
-    person = Person(first_name, last_name, age, gender, size, job)
-    return asdict(person)
+    # person = Person(first_name, last_name, age, gender, size, job)
+    # return asdict(person)
 
-    # return locals()
+    return locals()
