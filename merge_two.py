@@ -1,10 +1,18 @@
-def merge_two(person_ages: dict) -> dict:
+import json
+
+def merge_two(person_ages: dict[str, int]) -> str:
     while True:
         print("Add a new entry:")
         name = input("key: ")
         if name == "exit":
             break
         age = input("value: ")
-        person_ages[name.strip()] = age
+        try:
+            age_int = int(age)
+        except ValueError:
+            print("bad age")
+            continue
+        
+        person_ages[name.strip()] = age_int
 
-    return person_ages
+    return json.dumps(person_ages)
