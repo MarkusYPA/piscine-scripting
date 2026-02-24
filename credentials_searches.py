@@ -35,7 +35,7 @@ def credentials_search():
     creds = find_keys(data, {"password", "secret"})
 
     if not creds:
-        exit()
+        exit(1)
 
     with open("credentials.json", "w") as file:
         json.dump(creds, file, indent=2, sort_keys=True)
