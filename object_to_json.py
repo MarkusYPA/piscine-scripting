@@ -17,14 +17,18 @@ def create_new_user(details) -> User | None:
 
     new_user = User()
 
-    if username != None:
+    if username and email:
         new_user.username = username
-
-    if email != None:
         new_user.email = email
 
     return new_user
 
 
-def user_to_json(usr) -> dict:
-    return usr.__dict__
+def user_to_json(usr: User | None) -> str:
+    #return usr.__dict__
+    if usr:
+        json_str = json.dumps(usr.__dict__)
+        #print("object converted to json:", json_str)
+        return json_str
+    else:
+        return '{}'
