@@ -10,5 +10,5 @@ import re
 
 def tokenize(sentence: str) -> list[str]:
     # Keep only ASCII letters and whitespace
-    cleaned = re.sub(r"[^A-Za-z\s]", " ", sentence.lower())
+    cleaned = re.sub(r"[^A-Za-z0-9\s]", " ", sentence.lower())
     return cleaned.strip().split()
