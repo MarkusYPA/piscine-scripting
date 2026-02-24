@@ -7,7 +7,7 @@ class Person:
     last_name: str
     age: int
     gender: str
-    size: str
+    size: float
     job: str
 
 
@@ -21,9 +21,9 @@ def create_person(
     size: float = 1.83,
     job: str = "taxidermist",
 ) -> dict:
-    
+
     # all three approaches work
-    
+
     """return {
         "first_name": first_name,
         "last_name": last_name,
@@ -33,7 +33,7 @@ def create_person(
         "job": job,
     }"""
 
-    #person = Person(first_name, last_name, age, gender, size, job)
-    #return asdict(person)
+    person = Person(first_name, last_name, age, gender, size, job)
+    return asdict(person)
 
-    return locals()
+    # return locals()
