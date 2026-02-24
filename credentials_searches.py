@@ -34,12 +34,10 @@ def credentials_search():
 
     creds = find_keys(data, {"password", "secret"})
 
-    if not creds:
-        exit(1)
-
-    with open("credentials.json", "w") as file:
-        json.dump(creds, file, indent=2, sort_keys=True)
-        file.write("\n")
+    if creds:
+        with open("credentials.json", "w") as file:
+            json.dump(creds, file, indent=2, sort_keys=True)
+            file.write("\n")
 
 
 if __name__ == "__main__":
